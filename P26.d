@@ -8,7 +8,7 @@ For pure mathematicians, this result may be great. But we want to really generat
 
 Example:
     combinations(3, ['a', 'b', 'c', 'd', 'e', 'f']) -->
-    [['a', 'b', 'c']], ['a', 'b', 'd'], ['a', 'b', 'e'], ['a', 'b', 'f'], ['b', 'c', 'd'], ['b', 'c', 'e']...]
+    [['a', 'b', 'c'], ['a', 'b', 'd'], ['a', 'b', 'e'], ['a', 'b', 'f'], ['b', 'c', 'd'], ['b', 'c', 'e']...]
 */
 
 import std.stdio;

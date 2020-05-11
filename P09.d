@@ -52,7 +52,9 @@ T[][] packLoop(T)(T[] arr)
 void main()
 {
     int[] arr = [1, 1, 1, 1, 2, 3, 3, 1, 1, 4, 5, 5, 5, 5];
-    dchar[] darr = ['a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e'];
+    dchar[] darr = [
+        'a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e'
+    ];
     writeResult(arr, pack(arr));
     writeResult(darr, pack(darr));
 }
@@ -61,10 +63,13 @@ unittest
 {
     int[] arr = [1, 1, 1, 1, 2, 3, 3, 1, 1, 4, 5, 5, 5, 5];
     int[][] testArr = [[1, 1, 1, 1], [2], [3, 3], [1, 1], [4], [5, 5, 5, 5]];
-    dchar[] darr = ['a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e'];
-    dchar[][] testDarr = [['a', 'a', 'a', 'a'], [
-        'b'
-    ], ['c', 'c'], ['a', 'a'], ['d'], ['e', 'e', 'e', 'e']];
+    dchar[] darr = [
+        'a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e'
+    ];
+    dchar[][] testDarr = [
+        ['a', 'a', 'a', 'a'], ['b'], ['c', 'c'], ['a', 'a'], ['d'],
+        ['e', 'e', 'e', 'e']
+    ];
     assert(pack(arr) == testArr);
     assert(pack(darr) == testDarr);
     assert(packLoop(arr) == testArr);
